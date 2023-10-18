@@ -8,11 +8,11 @@ export class ContactView implements IViewStrategy {
       const template=html`
          <style>${style}</style>
          <div class="Contact">
-            <div class="contact-p">About View</div>
-            <div class="contact-p">About View</div>
-            <div class="contact-p">About View</div>
-            <div class="contact-p">About View</div>
-            <div class="contact-p">About View</div>
+            <div class="contact-p">Contact View</div>
+            <div class="contact-p">Contact View</div>
+            <div class="contact-p">Contact View</div>
+            <div class="contact-p">Contact View</div>
+            <div class="contact-p">Contact View</div>
          </div>
       `;
       render(template, this.container);
