@@ -36,7 +36,7 @@ export const Main:Main=(()=>{
          }
       },
       renderAppContent:async()=>{
-         const app:HTMLDivElement|null=document.querySelector('.app');
+         const app:HTMLDivElement|null=document.querySelector('#app');
          if(app!=null){
             const template=html`
                <h1>Typescript BRAD♥○◘😎</h1>
