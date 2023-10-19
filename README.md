@@ -39,32 +39,15 @@ Inside of your Astro project, you'll see the following folders and files:
 ├── public/
 |   ├── vite.svg
 ├── src/
-│   ├── components/ - shared components
-│   │   └── home - page components
-│   │       ├── Hero.astro
-│   │       ├── Features.astro
-│   │       ├── Testimonials.astro
-│   │   |-- ui - ui components
-│   │       ├── Footer - footer components
-│   │       │   ├── Footer.astro
-│   │       │   ├── ImportantLinksFooter.astro
-│   │       │   ├── SocialLinksFooter.astro
-│   │       |
-│   │       ├── Breadcrumb.astro
-│   │       ├── Header.astro
-│   │    |-- 
-│   ├── layouts/ - shared layouts
-│   │   └── BaseLayout.astro
-|   ├── config/ - config files
-│   │   └── index.ts
-│   └── pages/ - pages
-|   |   ├── privacy-policy.astro
-|   |   ├── terms-conditions.astro
-│       └── index.astro
-|   ├── template/ - configurations base of template
-│   │   └── styles/ - styles
-│   │       └── styles.css
+│   ├── common
+│   │   └── Component-Handler.ts
+│   │   |-- index.ts
+│   ├── components
+│   │   └── My-Component-Memoized 
+│   │   |-- My-Global-Scroll-Listener 
+│   │   |-- My-View-App-Root
 └── package.json
+└── index.html
 ```
 
 ## 🧞 Commands
@@ -78,4 +61,19 @@ All commands are run from the root of the project, from a terminal:
 | `yarn build`              | Build your production site to `./dist/`          |
 
 
+## ¿Do you want to add new pages?
 
+You can add new pages in the `src/pages` folder, you can use the `index.astro` file as a template.
+
+A page is composed of a layout and components, you can use the `BaseLayout.astro` to create a Layout.
+
+This is the format of a page:
+
+```astro
+---
+import { BaseLayout } from '../layouts/BaseLayout.astro'
+
+---
+##  Link
+
+https://foolyc00ly.github.io/ts-render-view-dist/
