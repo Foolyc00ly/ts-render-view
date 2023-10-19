@@ -78,16 +78,4 @@ All commands are run from the root of the project, from a terminal:
 | `yarn build`              | Build your production site to `./dist/`          |
 
 
-## ¿Do you want to add new pages?
 
-You can add new pages in the `src/pages` folder, you can use the `index.astro` file as a template.
-
-A page is composed of a layout and components, you can use the `BaseLayout.astro` to create a Layout.
-
-This is the format of a page:
-
-```astro
----
-import { BaseLayout } from '../layouts/BaseLayout.astro'
-
----
