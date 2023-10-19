@@ -63,6 +63,4 @@ All commands are run from the root of the project, from a terminal:
 
 ## LINK
 
-
-
-```https://foolyc00ly.github.io/ts-render-view-dist/
+`https://foolyc00ly.github.io/ts-render-view-dist/`
