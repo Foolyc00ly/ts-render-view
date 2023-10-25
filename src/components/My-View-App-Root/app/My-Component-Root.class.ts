@@ -41,7 +41,7 @@ export class ComponentRoot{
       fromEvent<PopStateEvent>(window, 'popstate')
       .pipe(map((event) => event.state?.view || 'home'),startWith(()=>{
          const path = window.location.pathname;
-         const view = path === '/' ? 'home' : path.substring(1);
+         const view = path === '/' ? 'inicio' : path.substring(1, path.length - 1);
          window.history.pushState({ view }, '', `/${view}`);
          console.log(view)
       }))
@@ -50,7 +50,7 @@ export class ComponentRoot{
       });
       fromEvent(window, 'load').subscribe(()=>{
          const path = window.location.pathname;
-         const view = path === '/' ? 'home' : path.substring(1);
+         const view = path === '/' ? 'inicio' : path.substring(1, path.length - 1);
          window.history.pushState({ view }, '', `/${view}`);
          this.component.renderView(view);
       });
